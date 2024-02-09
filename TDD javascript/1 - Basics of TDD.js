@@ -14,7 +14,7 @@ class Dollar {
         this.amount = amount;
     }
     multiplication(number){
-        return new Dollar(this.amount * number)
+        return new Dollar(this.amount * number);
     }
 }
 
@@ -23,9 +23,9 @@ const assert = require('assert');  // Imports assert package for the assert
 let five = new Dollar(5);  // Represents 5 Dollar
 let ten = five.multiplication(2);  // Method for multiplication
 assert.strictEqual(ten.amount, 10);  // Unit test that checks for 5 x 2 = 10
-let twenty = ten.multiplication(2)
+let twenty = ten.multiplication(2);
 assert.strictEqual(twenty.amount, 20);  // Unit test that checks for 10 x 2 = 20
-let thirty = ten.multiplication(3)
+let thirty = ten.multiplication(3);
 assert.strictEqual(thirty.amount, 30);  // Unit test that checks for 10 x 3 = 30
 
 // Iteration 1 - ReferenceError: Dollar is not defined
